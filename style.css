@@ -1,0 +1,921 @@
+/* ============================================= */
+/* ========= 0. Import Fonts & Reset =========== */
+/* ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================= */
+/* ========= 1. Body & General Setup =========== */
+/* ============================================= */
+
+body {
+    font-family: 'Lato', sans-serif; /* Default font for body text */
+    background-color: #fdfbf5; /* Light cream background */
+    background-image: none; /* Removed background image */
+    color: #333; /* Darker text for better contrast */
+    text-align: center; /* Default center align */
+    line-height: 1.7; /* Adjusted line height */
+}
+
+/* ============================================= */
+/* ============== 2. Navigation ================ */
+/* ============================================= */
+
+nav {
+    background-color: #34495e; /* Dark blue */
+    padding: 12px 0;
+    text-align: center;
+    position: sticky; /* Make nav sticky */
+    top: 0;
+    z-index: 1000; /* Ensure nav stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add shadow to sticky nav */
+}
+nav a {
+    color: #ecf0f1; /* Light grey text on dark nav */
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+nav a:hover,
+nav a.active { /* Style for hover and active link */
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================= */
+/* ========= 3. Headers & Page Titles ========== */
+/* ============================================= */
+
+/* Header for Main Page */
+header.main-header {
+    color: #f0f0f0;
+    padding: clamp(80px, 15vh, 160px) 20px;
+    font-family: 'Playfair Display', serif; /* Consistent font */
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://everon.com/upload/upload-images/vai-phi-lua-la-gi-10.jpg') center center / cover no-repeat fixed;
+    filter: grayscale(20%) contrast(90%) brightness(95%);
+    background-position: center;
+    text-align: center;
+}
+header.main-header h1 {
+     font-size: clamp(40px, 8vw, 100px);
+     margin: 0;
+}
+
+/* Page Title for Sub-Pages */
+.page-title-container {
+    padding: 40px 25px; /* Slightly more horizontal padding */
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.92); /* Slightly more opaque */
+    border-left: 6px solid #b8860b; /* Accent border */
+    text-align: left; /* Align text left next to border */
+    margin: 30px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* Slightly stronger shadow */
+}
+.page-title-container h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #b8860b; /* Accent color: Dark Golden Rod */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+/* ============================================= */
+/* =============== 4. Sections ================= */
+/* ============================================= */
+
+section {
+    margin: 35px auto; /* Slightly more margin */
+    padding: 40px; /* More padding */
+    background: rgba(255, 255, 255, 0.98); /* Almost white */
+    color: #333333;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09); /* Softer shadow */
+    border-radius: 12px; /* Rounder corners */
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: left; /* Changed from justify */
+    max-width: 90%;
+    line-height: 1.8;
+}
+
+/* Section Headings */
+section h2, section h3, section h4,
+.comparison-column h3, .gallery-group-title,
+.period-item h3, #phong-canh-vn h3, #phong-canh-nay h3, #phong-canh-xua h4, #phong-canh-nay h4 { /* Added Phong Canh Xua */
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+section h2, .comparison-section > h2, .gallery-group-title {
+    font-size: clamp(28px, 4vw, 36px);
+    text-align: center;
+    color: #b8860b; /* Accent color */
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+section h3 {
+    font-size: clamp(24px, 3.5vw, 30px);
+    color: #4a4a4a;
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
+    font-style: normal;
+    text-align: left;
+}
+section h4 {
+    font-size: clamp(20px, 3vw, 26px);
+    color: #5a5a5a;
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
+    font-style: normal;
+    text-align: left;
+}
+/* Class for specific headings like city titles */
+.accent-heading {
+     color: #b8860b; /* Use accent color */
+     border-bottom: 2px solid #b8860b;
+     padding-bottom: 5px;
+     display: inline-block; /* Để border chỉ bao quanh chữ */
+     margin-bottom: 15px; /* Added margin bottom */
+}
+
+/* Section Paragraphs & Links */
+section p {
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+section a {
+    color: #16a085; /* Teal color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+section a:hover {
+    color: #b8860b; /* Accent color on hover */
+    text-decoration: none;
+}
+
+/* ============================================= */
+/* ============ 5. Image Styling =============== */
+/* ============================================= */
+
+/* General Image Styling (Overridden where needed) */
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Default height */
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border: 1px solid #eee;
+    background-color: #f8f8f8; /* Loading background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Container Flex cho ảnh --- */
+.image-flex-container {
+    display: flex;
+    flex-wrap: wrap;       /* Cho phép ảnh xuống dòng trên màn hình nhỏ */
+    gap: 20px;             /* Khoảng cách giữa các ảnh/figure */
+    margin-top: 25px;      /* Adjusted margin */
+    margin-bottom: 35px;   /* Adjusted margin */
+    align-items: stretch;  /* Làm các figure/item con có chiều cao bằng nhau (quan trọng) */
+}
+
+/* --- Định dạng cho FIGURE chứa ảnh (nếu có) --- */
+.image-flex-container figure {
+    flex: 1 1 300px; /* Cho phép co giãn, kích thước cơ bản 300px, cho phép thu nhỏ */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Xếp ảnh trên, caption dưới */
+    background-color: #f8f8f8; /* Light background for figure */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bo góc nhẹ */
+    overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07); /* Subtle shadow */
+    padding: 0; /* Reset padding */
+}
+
+/* --- Định dạng chung cho ảnh cần cân bằng --- */
+/* APPLY THIS CLASS to images you want to have the same height within a flex container */
+img.image-balanced {
+    width: 100%;           /* Quan trọng: Làm ảnh đầy chiều rộng của container cha */
+    height: 300px;         /* <<< Đặt chiều cao CỐ ĐỊNH để các ảnh đồng đều */
+    object-fit: cover;     /* Phủ đầy khung chứa mà không méo (có thể cắt ảnh) */
+    object-position: center center; /* Căn giữa phần ảnh bị cắt */
+    display: block;        /* Loại bỏ khoảng trắng dư thừa */
+    margin: 0;             /* Reset margin */
+    border: none;          /* Remove border if inside figure */
+    border-radius: 0;      /* Remove border-radius if inside figure (figure has it) */
+    box-shadow: none;      /* Remove shadow if inside figure */
+    background-color: #eee; /* Màu nền tạm thời khi ảnh chưa tải */
+}
+
+/* Ensure image inside FIGURE uses the balanced style if figure is in flex container */
+.image-flex-container figure img.image-balanced {
+     border-radius: 0; /* Ảnh không cần bo góc vì figure đã bo */
+     box-shadow: none;
+     border-bottom: 1px solid #ddd; /* Add a subtle line between image and caption */
+}
+
+/* --- Điều chỉnh ảnh TRỰC TIẾP trong flex container (không có figure) --- */
+.image-flex-container > img.image-balanced {
+     flex: 1 1 300px; /* Áp dụng flex tương tự figure */
+     border-radius: 8px; /* Add radius if image is directly in flex */
+     box-shadow: 0 4px 10px rgba(0,0,0,0.07); /* Add shadow if image is directly in flex */
+     /* Chiều cao và object-fit đã được định nghĩa ở trên */
+}
+
+/* --- Caption trong Figure --- */
+.image-flex-container figure figcaption {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 0.9em; /* 16px */
+    color: #333;
+    background-color: #f0f0f0; /* Slightly different background for caption */
+    margin-top: auto; /* Đẩy caption xuống dưới cùng */
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --- Tùy chỉnh cho layout cụ thể --- */
+
+/* Layout 1 cột (Phong cảnh nay) */
+.image-flex-container.one-col figure,
+.image-flex-container.one-col > img.image-balanced {
+    flex-basis: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 750px; /* Giới hạn chiều rộng tối đa */
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-flex-container.one-col img.image-balanced {
+    height: 450px; /* Có thể cho ảnh cao hơn ở layout 1 cột */
+}
+
+/* Layout 3 cột (Trang phục, Lễ hội nay) */
+.image-flex-container.three-cols figure,
+.image-flex-container.three-cols > img.image-balanced {
+    flex-basis: calc(33.333% - 14px); /* (100%/3) - (2/3 * gap) */
+    min-width: 250px; /* Giảm min-width để vừa 3 cột dễ hơn */
+}
+.image-flex-container.three-cols img.image-balanced {
+    height: 250px; /* Có thể cho ảnh thấp hơn một chút ở layout 3 cột */
+}
+
+/* Layout 2 cột (Mặc định cho .image-flex-container) */
+.image-flex-container:not(.one-col):not(.three-cols) figure,
+.image-flex-container:not(.one-col):not(.three-cols) > img.image-balanced {
+    flex-basis: calc(50% - 10px); /* (100%/2) - (1/2 * gap) */
+    min-width: 280px;
+}
+/* Giữ chiều cao mặc định 300px cho layout 2 cột */
+
+/* Responsive Height Adjustment for Balanced Images */
+@media (max-width: 992px) {
+    .image-flex-container.three-cols figure,
+    .image-flex-container.three-cols > img.image-balanced {
+        flex-basis: calc(50% - 10px); /* Chuyển sang 2 cột */
+    }
+    .image-flex-container.three-cols img.image-balanced {
+         height: 280px; /* Tăng nhẹ chiều cao khi thành 2 cột */
+    }
+    .image-flex-container.one-col img.image-balanced {
+        height: 350px; /* Giảm chiều cao ảnh 1 cột */
+    }
+}
+
+@media (max-width: 768px) {
+    img.image-balanced {
+        height: 250px; /* Giảm chiều cao chung */
+    }
+    .image-flex-container.one-col img.image-balanced {
+        height: 300px; /* Giảm chiều cao ảnh 1 cột */
+    }
+    .image-flex-container.three-cols img.image-balanced {
+         height: 250px; /* Giữ chiều cao khi thành 2 cột */
+    }
+    /* Layout 2 cột và 3 cột giờ đều là 2 cột */
+    .image-flex-container:not(.one-col) figure,
+    .image-flex-container:not(.one-col) > img.image-balanced {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .image-flex-container {
+        gap: 15px; /* Giảm khoảng cách */
+    }
+    /* Chuyển tất cả thành 1 cột */
+    .image-flex-container figure,
+    .image-flex-container > img.image-balanced {
+        flex-basis: 100%;
+        min-width: unset;
+    }
+    img.image-balanced {
+        height: 220px; /* Giảm chiều cao thêm */
+    }
+    .image-flex-container.one-col img.image-balanced {
+        height: 280px; /* Giảm chiều cao ảnh 1 cột */
+    }
+}
+
+/* ============================================= */
+/* ========= 6. Slideshow (Main Page) ========== */
+/* ============================================= */
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px; /* Chiều cao mặc định */
+    margin: 40px auto;
+    overflow: hidden; /* QUAN TRỌNG: Che phần ảnh ngoài khung */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+/* Sử dụng selector cụ thể hơn */
+.slideshow .slides {
+    display: flex;
+    width: 800%; /* 8 slides */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* === CHỈ CÓ TRANSITION, KHÔNG CÓ ANIMATION === */
+    transition: transform 25s ease-in-out; /* Thời gian trượt 0.8s */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* Đảm bảo transform ban đầu là 0 */
+    transform: translateX(0%);
+}
+/* Sử dụng selector cụ thể hơn */
+.slideshow .slide {
+    width: 12.5%; /* 100% / 8 slides */
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+/* Định dạng ảnh bên trong slide (Có thể bỏ !important nếu không bị xung đột) */
+.slideshow .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: none;
+    max-height: none;
+    background-color: #ddd;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/* Sử dụng selector cụ thể hơn */
+.slideshow .caption {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(44, 62, 80, 0.85);
+    color: white;
+    padding: 14px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    z-index: 10; /* Đảm bảo caption trên ảnh */
+}
+
+/* === KHÔNG CÒN @keyframes slide === */
+
+/* Responsive cho slideshow */
+@media (max-width: 600px) {
+    .slideshow { height: 350px; }
+    .slideshow .caption { font-size: 18px; padding: 10px 20px; bottom: 20px; }
+}
+@media (max-width: 480px) {
+    .slideshow { height: 280px; }
+    .slideshow .caption { font-size: 15px; padding: 8px 15px; }
+}
+
+/* ============================================= */
+/* ========== 7. Marquee (Main Page) =========== */
+/* ============================================= */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: rgba(52, 73, 94, 0.9);
+    color: #ecf0f1;
+    padding: 14px 0;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+    will-change: transform;
+    font-family: 'Playfair Display', serif;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ============================================= */
+/* =========== 8. Gallery (Thu Vien) =========== */
+/* ============================================= */
+
+section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 25px; /* Slightly reduced gap */
+    padding: 30px 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 1200px; /* Limit width */
+    margin: 30px auto;
+}
+.gallery-group-title {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(26px, 4vw, 34px); /* Responsive size */
+    font-weight: bold;
+    color: #b8860b;
+    margin: 60px 0 35px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+}
+hr.gallery-divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(184, 134, 11, 0.5), rgba(0, 0, 0, 0));
+    margin: 60px auto;
+}
+.image-container { /* Gallery item container */
+    position: relative;
+    width: clamp(280px, calc(50% - 15px), 320px); /* Responsive width */
+    flex-grow: 1; /* Allow items to grow */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+.image-container:hover {
+     box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+     transform: translateY(-5px); /* Slight lift on hover */
+}
+.image-container img { /* Styles for gallery images, override general img */
+    width: 100%;
+    height: 240px; /* Fixed height for gallery consistency */
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0; /* Only top corners rounded */
+    transition: transform 0.35s ease-in-out, filter 0.3s ease;
+    /* Override conflicting styles */
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    background-color: #eee;
+}
+.image-container:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.05) contrast(1.02);
+}
+.image-container p { /* Gallery caption */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.9); /* Slightly darker */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px; /* Slightly smaller */
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(100%); /* Start hidden below */
+    transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out; /* Add transform transition */
+    border-radius: 0 0 10px 10px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+.image-container:hover p {
+    opacity: 1;
+    transform: translateY(0); /* Slide in from bottom */
+}
+
+/* ============================================= */
+/* ========= 9. Comparison Page Styles ========= */
+/* ============================================= */
+
+.comparison-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: stretch; /* Make columns equal height */
+}
+.comparison-column {
+    flex: 1; /* Equal width columns */
+    min-width: 300px; /* Minimum width before wrapping */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    display: flex; /* Use flex for vertical alignment inside */
+    flex-direction: column; /* Stack elements vertically */
+}
+.comparison-column h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #34495e; /* Dark blue heading */
+    font-size: clamp(22px, 3vw, 26px); /* Responsive size */
+    font-family: 'Playfair Display', serif;
+}
+.comparison-column img { /* Styles for comparison images */
+    display: block;
+    margin: 20px auto;
+    width: 100%; /* Use width 100% */
+    max-width: 400px; /* Limit max width */
+    height: 300px; /* Fixed height for comparison */
+    object-fit: cover; /* Crop to fit the fixed height */
+    object-position: center center; /* Center the crop */
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    background-color: #f0f0f0; /* Placeholder color */
+}
+.comparison-column p { /* Ensure paragraphs are flexible */
+    flex-grow: 1; /* Allow text to take remaining space */
+}
+.comparison-section > h2 { /* Main title for comparison section */
+    color: #b8860b;
+    width: 100%; /* Ensure title spans full width */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ============================================= */
+/* ========= 10. Contact Page Styles =========== */
+/* ============================================= */
+
+#contact-info {
+    text-align: left;
+    line-height: 1.9;
+    font-size: 18px;
+}
+#contact-info p {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+#contact-info i.fas {
+    color: #b8860b;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0; /* Prevent icon shrinking */
+}
+#contact-info strong {
+    color: #4a4a4a;
+    margin-right: 8px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+#contact-info a {
+    color: #16a085;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    word-break: break-all; /* Break long links/emails */
+}
+#contact-info a:hover {
+    color: #b8860b;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+    color: #444;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.15);
+}
+#contact-form textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+#contact-form button {
+    display: inline-block;
+    width: auto; /* Don't force full width unless needed */
+    padding: 14px 35px;
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0 0 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+#contact-form button:hover {
+    background-color: #cea54a; /* Lighter gold on hover */
+    transform: translateY(-2px);
+}
+.map-container {
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border: 1px solid #eee; /* Added subtle border */
+}
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+    display: block; /* Remove potential space below */
+}
+
+/* ============================================= */
+/* =============== 11. Footer ================== */
+/* ============================================= */
+
+footer {
+    background-color: #2c3e50; /* Dark slate blue */
+    color: #bdc3c7; /* Silver */
+    padding: 45px 20px;
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    line-height: 1.8;
+}
+footer p {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-size: 17px;
+    color: #ecf0f1; /* Lighter text for members */
+}
+footer strong {
+    font-weight: bold;
+    color: #ffffff; /* White for names */
+}
+
+/* ============================================= */
+/* ========= 12. Utility & Specific ============ */
+/* ============================================= */
+
+/* Utility Classes */
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+
+/* Styles for period items in VN_xua.html & VN_nay.html */
+.period-item {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #ccc; /* Slightly darker dash */
+}
+.period-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.period-item h3 {
+   color: #8B4513; /* SaddleBrown */
+   font-size: clamp(22px, 3.5vw, 28px); /* Responsive size */
+   margin-bottom: 0.7em;
+   font-family: 'Playfair Display', serif;
+   text-align: left; /* Ensure left align */
+}
+/* Phong Canh Section Titles (Shared H3 Style) */
+#phong-canh-xua h3,
+#phong-canh-nay h3 {
+   font-size: clamp(26px, 4vw, 34px); /* Consistent large title */
+   color: #a0522d; /* Peru */
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 30px; /* More space after title */
+   border-bottom: 1px solid #e0e0e0; /* Lighter border */
+   padding-bottom: 15px;
+   font-family: 'Playfair Display', serif;
+}
+/* Phong Canh Sub-Section Titles (Shared H4 Style) */
+#phong-canh-xua h4,
+#phong-canh-nay h4 {
+    color: #16a085; /* Teal */
+    font-size: clamp(20px, 3vw, 24px); /* Responsive size */
+    margin-top: 1em; /* Adjusted margin */
+    margin-bottom: 0.8em; /* Adjusted margin */
+    font-family: 'Playfair Display', serif;
+    text-align: left; /* Ensure left align */
+}
+
+/* Styling for images within specific sections like #cac-thoi-ky */
+#cac-thoi-ky .image-balanced {
+    width: 100%;
+    max-width: 550px; /* Slightly larger max-width */
+    height: auto;     /* *** Override fixed height: Maintain aspect ratio here *** */
+    object-fit: contain; /* Ensure the whole image is visible */
+    display: block;
+    margin: 25px auto; /* Consistent margin */
+    border-radius: 8px; /* Consistent radius */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Consistent shadow */
+}
+
+/* Video Container Styling */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 950px; /* Max width for the video */
+    background: #000; /* Black background while loading */
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove default border */
+}
+.video-caption {
+ text-align: center;
+ font-style: italic;
+ margin-top: 15px;
+ color: #555;
+ font-size: 16px;
+ font-family: 'Lato', sans-serif;
+}
+
+/* ============================================= */
+/* =========== 13. Responsive Design =========== */
+/* ============================================= */
+
+@media (max-width: 992px) {
+    /* Inherits tablet layout adjustments from image section */
+    .comparison-column img {
+        height: 250px; /* Adjust comparison image height */
+    }
+}
+
+@media (max-width: 768px) {
+    section { padding: 25px; font-size: 17px; max-width: 95%; }
+    section p { font-size: 17px; }
+    .page-title-container {
+        padding: 30px 20px;
+        text-align: center;
+        border-left: none;
+        max-width: 95%;
+    }
+    .page-title-container h1 { text-align: center; }
+    nav a { font-size: 20px; margin: 0 8px; }
+    .gallery-group-title { font-size: clamp(24px, 5vw, 30px); }
+
+    /* Comparison columns stack */
+    .comparison-column {
+         min-width: unset; /* Allow stacking */
+         width: 100%;
+    }
+    .comparison-column img {
+        height: 280px; /* Adjust height when stacked */
+    }
+    #cac-thoi-ky .image-balanced {
+        max-width: 90%; /* Allow image to be wider */
+    }
+}
+@media (max-width: 600px) {
+    .slideshow { height: 350px; /* Slightly taller for mobile */ }
+    .caption { font-size: 18px; padding: 10px 20px; bottom: 20px; }
+    section h2, .comparison-section > h2, .gallery-group-title { font-size: clamp(24px, 6vw, 30px); }
+    section h3, .period-item h3 { font-size: clamp(20px, 5vw, 26px); }
+    section h4, #phong-canh-xua h4, #phong-canh-nay h4 { font-size: clamp(18px, 4.5vw, 22px); }
+    .image-container { width: calc(100% - 20px); } /* Gallery items full width */
+    #contact-form button { width: 100%; text-align: center; }
+    footer p { font-size: 16px; }
+    nav a { font-size: 18px; margin: 0 6px; } /* Adjust nav spacing */
+}
+@media (max-width: 480px) {
+    body { line-height: 1.6; }
+    .slideshow { height: 280px; }
+    .caption { font-size: 15px; padding: 8px 15px; }
+    nav { padding: 10px 0; }
+    nav a { font-size: 16px; margin: 0 5px; display: inline-block; padding: 5px 0; } /* Better spacing on small screens */
+    section { padding: 20px 15px; font-size: 16px; }
+    section p { font-size: 16px; margin-bottom: 1.3em; }
+    .page-title-container h1 { font-size: clamp(24px, 7vw, 32px); }
+    footer { padding: 30px 15px; }
+    #contact-info p { font-size: 16px; }
+    #contact-form input, #contact-form textarea, #contact-form label { font-size: 15px;}
+    .comparison-column img { height: 220px; }
+}
+@media (min-width: 601px) and (max-width: 767px) { /* Adjust gallery columns for smaller tablets */
+     .image-container { width: calc(50% - 15px); } /* 2 columns gallery */
+}
+@media (min-width: 768px) { /* Ensure gallery has appropriate columns on larger screens */
+     .image-container { width: clamp(280px, calc(33.33% - 20px), 320px); } /* Try for 3 columns */
+}
+@media (min-width: 1100px) { /* Maybe 4 columns on very wide screens */
+    .image-container { width: clamp(260px, calc(25% - 20px), 300px); }
+}
+
+/* ====================================================== */
+/* === FIX v2: Ảnh bị cắt xấu trong mục Trang Phục Nay === */
+/* ====================================================== */
+
+/* Chọn ảnh .image-balanced BÊN TRONG figure, trong container, trong period-item 1&2 của #trang-phuc-nay */
+#trang-phuc-nay .period-item:nth-of-type(1) .image-flex-container figure img.image-balanced,
+#trang-phuc-nay .period-item:nth-of-type(2) .image-flex-container figure img.image-balanced {
+    object-fit: contain !important; /* Hiển thị toàn bộ ảnh, KHÔNG CẮT XÉN */
+    background-color: #f8f8f8 !important; /* Màu nền nhạt cho khoảng trống */
+    height: auto !important; /* Cho phép chiều cao tự điều chỉnh theo tỷ lệ ảnh */
+    max-height: 300px; /* Giới hạn chiều cao tối đa để không quá lớn */
+    width: auto; /* Cho phép chiều rộng tự điều chỉnh */
+    max-width: 100%; /* Không vượt quá chiều rộng của figure */
+    margin-left: auto; /* Căn giữa ảnh nếu nó hẹp hơn figure */
+    margin-right: auto;
+}
+
+/* Đảm bảo figure chứa nó linh hoạt */
+#trang-phuc-nay .period-item:nth-of-type(1) .image-flex-container figure,
+#trang-phuc-nay .period-item:nth-of-type(2) .image-flex-container figure {
+    /* Có thể cần thêm style cho figure nếu cần */
+    background-color: #f8f8f8; /* Đảm bảo nền figure nhất quán */
+}
