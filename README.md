@@ -84,3 +84,7 @@ Vietnam website past and present/
 ## 📜 License / Giấy phép
 For educational use only. No commercial redistribution.
 Chỉ dùng cho mục đích giáo dục. Không phân phối thương mại.
+
+## 🔗 Live Demo
+
+👉 [Click here to view the website](https://nhatnguyenyn.github.io/Vietnam-website-past-and-present/)
