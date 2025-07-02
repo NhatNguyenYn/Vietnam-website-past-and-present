@@ -1,5 +1,5 @@
-# 🇻🇳 Vietnam: Past and Present – Educational Website  
-# 🇻🇳 Việt Nam: Xưa và Nay – Website Giáo dục
+# eng Vietnam: Past and Present – Educational Website  
+# vn Việt Nam: Xưa và Nay – Website Giáo dục
 
 🌐 A simple educational website to showcase Vietnam's transformation over time, created for a school history and technology project.  
 🌐 Website giáo dục đơn giản thể hiện sự thay đổi của Việt Nam theo thời gian, thực hiện cho dự án môn Lịch sử & Tin học.
@@ -88,3 +88,5 @@ Chỉ dùng cho mục đích giáo dục. Không phân phối thương mại.
 ## 🔗 Live Demo
 
 👉 [Click here to view the website](https://nhatnguyenyn.github.io/Vietnam-website-past-and-present/)
+
+Tác giả nnYunaXYZ
