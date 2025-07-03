@@ -33,7 +33,6 @@ The website includes / Website bao gồm:
 |-------------|------------|
 | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Xây dựng các trang nội dung |
 | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Thiết kế giao diện và hiệu ứng |
-| ![Canva](https://img.shields.io/badge/-Canva-00C4CC?style=flat&logo=canva&logoColor=white) | Thiết kế đồ họa minh họa (`Link canva.txt`) |
 | 🖼 JPEG | Hình ảnh minh họa thực tế |
 
 ---
