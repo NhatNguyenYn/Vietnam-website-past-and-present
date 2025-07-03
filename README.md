@@ -26,7 +26,11 @@ The website includes / Website bao gồm:
   Trang liên hệ và tài liệu tham khảo
 
 ---
+![Trang chủ](./assets/web 1)
+![So sánh xưa và nay](./assets/web 2)
+![Thư viện ảnh](web 3)
 
+---
 ## 🛠️ Technologies Used / Công nghệ sử dụng
 
 | 🧩 Công nghệ | 🧪 Mục đích |
