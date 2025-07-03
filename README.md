@@ -76,7 +76,6 @@ Vietnam-website-past-and-present/
 ├── lienhe.html            # 💬 Contact / Liên hệ
 ├── style.css              # 🎨 Stylesheet / Thiết kế giao diện
 ├── pic-header/            # 🖼️ Header images / Ảnh minh họa
-├── Link canva.txt         # 🔗 Canva design links / Liên kết Canva
 └── README.md              # 📄 Project description / Mô tả dự án
 ```
 
