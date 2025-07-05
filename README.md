@@ -1,75 +1,60 @@
-# eng Vietnam: Past and Present – Educational Website  
-# vn Việt Nam: Xưa và Nay – Website Giáo dục
+# 🇻🇳 Việt Nam: Xưa và Nay – Website Giáo dục
 
-🌐 A simple educational website to showcase Vietnam's transformation over time, created for a school history and technology project.  
-🌐 Website giáo dục đơn giản thể hiện sự thay đổi của Việt Nam theo thời gian, thực hiện cho dự án môn Lịch sử & Tin học.
+# 🇬🇧 Vietnam: Past and Present – Educational Website
+
+> 🌐 Website giáo dục đơn giản thể hiện sự thay đổi của Việt Nam theo thời gian, thực hiện cho dự án môn Lịch sử & Tin học.
+> 🌐 A simple educational website to showcase Vietnam's transformation over time, created for a school history and technology project.
 
 ---
 
-## 🧠 Description / Mô tả
+## 🎯 Overview | Tổng quan
 
-This project highlights the **cultural**, **architectural**, and **societal** changes in Vietnam from the past to the present day.  
+This project highlights the **cultural**, **architectural**, and **societal** changes in Vietnam from the past to the present day.
 Dự án trình bày những thay đổi về **văn hóa**, **kiến trúc** và **xã hội** của Việt Nam từ xưa đến nay.
 
-The website includes / Website bao gồm:
-
-- 🏯 📷 Pages on Ancient and Modern Vietnam (`VN_xua.html` & `VN_nay.html`)  
-  Trang về Việt Nam xưa và nay
-
-- 📚 Comparison page between past & present (`so sanh.html`)  
-  Trang so sánh giữa hiện tại và quá khứ
-
-- 🖼️ Image gallery and media (`pic-header/`)  
-  Bộ sưu tập ảnh và phương tiện
-
-- 💬 Contact page and resource links  
-  Trang liên hệ và tài liệu tham khảo
-
 ---
-![Trang chủ](./assets/web1.png)
-![So sánh xưa và nay](./assets/web2.png)
-![Thư viện ảnh](./assets/web3.png)
 
----
-## 🛠️ Technologies Used / Công nghệ sử dụng
+## ✅ Features | Tính năng chính
 
-| 🧩 Công nghệ | 🧪 Mục đích |
-|-------------|------------|
-| ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Xây dựng các trang nội dung |
-| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Thiết kế giao diện và hiệu ứng |
-| 🖼 JPEG | Hình ảnh minh họa thực tế |
+| Page               | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| 🏯 `VN_xua.html`   | Ancient Vietnam: culture, architecture, lifestyle |
+| 🏙️ `VN_nay.html`  | Modern Vietnam: modernization and daily life      |
+| 🔄 `so sanh.html`  | Compare past and present views side by side       |
+| 🖼 `thu vien.html` | Image library and visuals about Vietnam           |
+| 💬 `lienhe.html`   | Contact section and external resources            |
 
 ---
 
-## 🚀 How to Run / Cách sử dụng
+## 🛠️ Technologies Used | Công nghệ sử dụng
 
-1. 📥 **Download or clone** the repository  
-   Tải về hoặc sao chép repo này
-
-2. 🌐 **Open** `main.html` in your browser  
-   Mở file `main.html` bằng trình duyệt
-
-✅ No setup or server required  
-✅ Không cần cài đặt hoặc server
+| Technology                                                                                   | Purpose / Mục đích                        |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat\&logo=html5\&logoColor=white) | Build web pages / Xây dựng nội dung trang |
+| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)    | Styling and layout / Thiết kế giao diện   |
+| 🖼 JPEG & PNG                                                                                | Illustration images / Hình ảnh minh họa   |
 
 ---
 
-## 🧾 Credits / Thông tin thêm
+## 🚀 How to Use | Cách sử dụng
 
-- 👨‍💻 Designed and coded by: *Nhat Nguyen Yuna*  
-  Thiết kế và lập trình: *Nhat Nguyen Yuna*
+### 1. 📥 Download or Clone the repository:
 
-- 🎓 Project for: High school informatics/history fair  
-  Dự án phục vụ hội thi lịch sử và tin học trường THPT
+```bash
+git clone https://github.com/NhatNguyenYn/Vietnam-website-past-and-present.git
+```
 
-- 🖼️ Images collected from public sources *(for education only)*  
-  Hình ảnh được lấy từ nguồn công cộng, dùng cho mục đích học tập
+### 2. 🌐 Open with any browser:
+
+Just open `main.html` to view the site. No server setup required.
+
+✅ No dependencies, no setup, fully client-side!
 
 ---
 
-## 📁 Folder Structure / Cấu trúc thư mục
+## 📁 Folder Structure | Cấu trúc thư mục
 
-```plaintext
+```
 Vietnam-website-past-and-present/
 ├── main.html              # 🏠 Homepage / Trang chủ
 ├── VN_xua.html            # 🏯 Ancient Vietnam / Việt Nam xưa
@@ -78,16 +63,36 @@ Vietnam-website-past-and-present/
 ├── thu vien.html          # 🖼️ Media library / Thư viện hình ảnh
 ├── lienhe.html            # 💬 Contact / Liên hệ
 ├── style.css              # 🎨 Stylesheet / Thiết kế giao diện
-├── pic-header/            # 🖼️ Header images / Ảnh minh họa
+├── pic-header/            # 🖼️ Header images / Ảnh minh họa phần đầu trang
 └── README.md              # 📄 Project description / Mô tả dự án
 ```
 
-## 📜 License / Giấy phép
-For educational use only. No commercial redistribution.
-Chỉ dùng cho mục đích giáo dục. Không phân phối thương mại.
+---
 
-## 🔗 Live Demo
+## 🧾 Credits | Thông tin thêm
 
-👉 [Click here to view the website](https://nhatnguyenyn.github.io/Vietnam-website-past-and-present/)
+* 👨‍💻 **Designed and coded by**: *Ngô Nhật Nguyên (nnYunaXYZ)*
+* 🎓 **Built for**: High school informatics/history fair
+* 🖼️ **Images**: Sourced from public domain (educational use only)
 
-Author: nnYunaXYZ
+---
+
+## 📌 Author | Tác giả
+
+* 👨‍💻 **Ngô Nhật Nguyên (nnYunaXYZ)**
+* 🎯 Student developer from Vietnam 🇻🇳
+* 🏫 This project is part of a school showcase on history and technology integration
+
+---
+
+## 📜 License | Giấy phép
+
+📚 This project is for **educational use only**. Commercial redistribution is not allowed.
+📚 Dự án chỉ sử dụng cho mục đích học tập. Không được phân phối thương mại. This project is for **educational use only**. Commercial redistribution is not allowed.
+📚 Dự án chỉ sử dụng cho mục đích học tập. Không được phân phối thương mại.
+
+---
+
+## 🔗 Live Demo | Xem bản demo
+
+👉 [View website on GitHub Pages](https://nhatnguyenyn.github.io/Vietnam-website-past-and-present/)
